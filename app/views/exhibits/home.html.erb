@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <%= favicon_link_tag 'favicon.ico' %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.typekit.net/jax2gkd.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+  <style>
+  @media only screen and (max-width: 600px) {
+      .col-img {
+        width: 160px;
+      }
+
+      .red:after {
+        width: 160px;
+        margin-top: -120px;
+        height: 120px;
+      }
+
+      .red:hover:after {
+        width:160px;
+        margin-top: -120px;
+        height: 120px;
+      }
+
+      .flex {
+        display:block;
+      }
+
+      p.footer-txt {
+        font-size: 15px;
+      }
+
+      p.header-p {
+      font-size: 20px;
+    }
+
+      h1.header-h {
+      font-size: 36px;
+    }
+
+
+  }
+  </style>
+
+  <div class="header-container">
+    <%=image_tag("exhibition_buckley_traitor_muscle.jpg", :class => "header-img")%>
+    <div class="bottom-text">
+      <p class="header-p"> Current Exhibition</p>
+      <h1 class="header-h"> Joseph Buckley: <br> Traitor Muscle</h1>
+      <p class="header-p"> September 22 - Novemeber 03 2018</p> </div>
+    </div>
+
+      <div class="container">
+           <div class="row">
+               <div class="col-xs-6 col-md-6 col-lg-3 event-col">
+                 <p class="event-desc"> Public Program </p>
+                 <h2 class="event-title"> Open <br>
+                   Studios </h2>
+                 <p class="event-desc"> October 4, 6pm </p>
+               </div>
+               <div class="col-xs-6 col-md-6 col-lg-3 event-col">
+                 <p class="event-desc"> Public Program </p>
+                 <h2 class="event-title"> Young Girl <br>
+                 Reading <br>
+                 Group</h2>
+                 <p class="event-desc"> October 12, 4pm </p>
+               </div>
+              <div class="col-xs-6 col-md-6 col-lg-3 event-col">
+                 <p class="event-desc"> Public Program </p>
+                 <h2 class="event-title"> Unlearning <br>
+                 Learning </h2>
+                 <p class="event-desc"> Part of Traitor Muscle </p>
+                 <p class="event-desc"> October 20, 5pm </p>
+               </div>
+               <div class="col-xs-6 col-md-6 col-lg-3 event-col">
+                 <p class="event-desc"> Public Program </p>
+                 <h2 class="event-title"> Artist Talk: <br>
+                   Joseph <br>
+                 Buckley <br> </h2>
+                 <p class="event-desc"> Part of Traitor Muscle </p>
+                 <p class="event-desc">October 29, 8pm </p>
+               </div>
+           </div>
+       </div>
+
+
+       <div class="container">
+         <h3 class="header-collection">The Collection</h3>
+         <div class="row flex">
+             <div class="col-xs-6 col-md-6 col-lg-3">
+               <div class="red">
+               <%=image_tag("artwork_buckley_traitor_muscle.jpg", :class => "col-img")%>
+               </div>
+               <p class="col-title">
+                 Joseph Buckley <br>
+                 The Aristocrat, 2018
+               </p>
+               <p class="incl">Included in Traitor Muscle</p>
+             </div>
+             <div class="col-xs-6 col-md-6 col-lg-3">
+               <div class="red">
+               <%=image_tag("artwork_dijkstra_hilton_head.jpg", :class => "col-img")%>
+               </div>
+                 <p class="col-title">
+                    Rineke Dijkstra<br>
+                    Hilton Head, SC, 1992 </p>
+             </div>
+            <div class="col-xs-6 col-md-6 col-lg-3">
+              <div class="red">
+              <%=image_tag("artwork_export_abrundung_ii.jpg", :class => "col-img")%>
+              </div>
+                <p class="col-title">
+                Valie Export <br>
+                Abrundung II, 1976
+              </p>
+            </div>
+             <div class="col-xs-6 col-md-6 col-lg-3">
+               <div class="red">
+               <%=image_tag("artwork_mapplethorpe_alice_neel.jpg", :class => "col-img")%>
+               </div>
+                 <p class="col-title">
+                   Robert Mapplethorpe<br>
+                   Alice Neel, 1984
+               </p>
+               </div>
+             </div>
+         <div class="row flex">
+             <div class="col-xs-6 col-md-6 col-lg-3">
+               <div class="red">
+               <%=image_tag("artwork_marten_decoy_in_d.png", :class => "col-img")%>
+               </div>
+               <p class="col-title">
+                 Helen Marten<br>
+                 Decoy in D, 2008
+               </p>
+             </div>
+             <div class="col-xs-6 col-md-6 col-lg-3">
+               <div class="red">
+               <%=image_tag("artwork_merz_untitled.jpg", :class => "col-img")%>
+               </div>
+               <p class="col-title">
+                 Marisa Merz <br>
+                 Untitled, 2001-2002
+               </p>
+             </div>
+             <div class="col-xs-6 col-md-6 col-lg-3">
+               <div class="red">
+               <%=image_tag("artwork_ogrady_untitled.jpg", :class => "col-img")%>
+               </div>
+               <p class="col-title">
+                 Lorraine O'Grady<br>
+                 Untitled, 1980-1983
+               </p>
+             </div>
+             <div class="col-xs-6 col-md-6 col-lg-3">
+               <div class="red">
+               <%=image_tag("artwork_trockel_untitled.jpg", :class => "col-img")%>
+               </div>
+               <p class="col-title">
+                 Rosemarie Trockel <br>
+                 Untitled, 1987
+               </p>
+             </div>
+         </div>
+       </div>
+
+
+<footer class="footer">
+  <div class="container footer-c">
+    <div class="row">
+      <div class="col-xs-6 col-md-6 col-lg-3">
+        <h2 class="footer-txt">
+          The Museum
+        </h2>
+      </div>
+      <div class="col-xs-6 col-md-6 col-lg-3">
+        <h2 class="footer-txt">
+          195 Chrystie St.<br>
+          NY 10002
+        </h2>
+      </div>
+      <div class="col-xs-6 col-md-6 col-lg-3">
+        <h2 class="footer-txt">
+          T 845-758-7598<br>
+          F 845-758-2442
+        </h2>
+      </div>
+      <div class="col-xs-6 col-md-6 col-lg-3">
+        <h2 class="footer-txt">
+          Tuesday—Saturday <br>
+          11am—6pm
+        </h2>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
