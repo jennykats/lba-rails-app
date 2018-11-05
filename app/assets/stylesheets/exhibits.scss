@@ -14,6 +14,7 @@
   }
 
   $font-stack:  "Suisse BP Int'l Medium-2";
+  $scd-font-stack: "big-caslon-fb";
   $primary-color: #FF3127;
 
   .header-container {
@@ -44,7 +45,7 @@
   }
 
   p {
-    font-family: "big-caslon-fb";
+    font-family: $scd-font-stack;
   }
 
   h1.header-h {
@@ -58,13 +59,13 @@
 
   h2.event-title {
     color: $primary-color;
-    font-size: 30px;
+    margin: 0;
+    font-size: 32px;
     font-weight: 400;
     line-height: 35px;
   }
 
   p.event-desc {
-    /* line-height:25px; */
     font-size: 15px;
     color: $primary-color;
     margin: 0;
@@ -105,16 +106,16 @@
   .red:hover:after {
     display: block;
     position: relative;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #FF3127 60%);
-    margin-top: -150px;
-    height: 150px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #FF3127 40%);
+    margin-top: -180px;
+    height: 180px;
     width: 250px;
     content: '';
   }
 
   .col-title{
     font-size: 23px;
-    font-family: "big-caslon-fb, serif;";
+    font-family: $scd-font-stack;
     color: $primary-color;
   }
 
@@ -122,10 +123,6 @@
     border-left: 10px solid #c2c4c6;
     height: 209px;
     margin-bottom: 10px;
-  }
-
-  h2.event-title {
-    margin: 0;
   }
 
   .footer {
@@ -143,7 +140,6 @@
     font-size: 25px;
     font-weight: 400;
   }
-
 
  p.incl {
    display:inline-block;
